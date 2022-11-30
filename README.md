@@ -15,8 +15,9 @@
  1. Склонируйте репозиторий себе на комьютер: git clone https://github.com/kardinalanna/Software-Engineering.git
  2. Создайте виртуальное окружение в папке с проектом и установите нужные библиотеки при помощи команды в терминале: pip install -r requirements.txt
  3. Запустите python main файл командой: python main.py
- 
+
  ### Пример работы
+
 После запуска бота обратитесь к нему @parseYT_bot и напишите запрос. Выберете подходящее видио в появившемся окне.
 
  ![exp_img](./img/exp_img.png)

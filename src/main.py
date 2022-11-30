@@ -1,11 +1,8 @@
-import hashlib
-
 from youtube_search import YoutubeSearch
 from config import TOKEN
 from aiogram import Bot, types, utils
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-from aiogram.types import InputTextMessageContent, InlineQueryResultArticle
 import hashlib
 
 def searcher(text):
