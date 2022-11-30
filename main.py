@@ -12,4 +12,5 @@ def searcher(text):
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
+@dp.inline_handler() #работа в inline режиме
 executor.start_polling(dp, skip_updates=True)
