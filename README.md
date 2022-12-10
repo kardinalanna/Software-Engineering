@@ -19,4 +19,6 @@
  ### Пример работы
 После запуска бота обратитесь к нему @parseYT_bot и напишите запрос. Выберете подходящее видио в появившемся окне.
 
- ![exp_img](./img/exp_img.png)
+
+ ![alt text](https://github.com/kardinalanna/Software-Engineering/blob/main/exp_img.PNG?raw=true)
+
