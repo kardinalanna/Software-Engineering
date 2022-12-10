@@ -19,4 +19,4 @@
  ### Пример работы
 После запуска бота обратитесь к нему @parseYT_bot и напишите запрос. Выберете подходящее видио в появившемся окне.
 
- ![alt text](https%3A%2F%2Fgithub.com%2Fkardinalanna%2FSoftware-Engineering%2Fblob%2Frelease%2F1%2Fimage.jpg%3Fraw%3Dtrue)
+ ![alt text](https://github.com/kardinalanna/Software-Engineering/blob/main/exp_img.PNG?raw=true)
