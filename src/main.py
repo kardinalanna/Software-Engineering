@@ -1,14 +1,16 @@
+
+from youtube_search import YoutubeSearch
 from config import TOKEN
 from aiogram import Bot, types, utils
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-from youtube_search import YoutubeSearch
+from aiogram.types import InputTextMessageContent, InlineQueryResultArticle
 import hashlib
 
 def searcher(text):
     res = YoutubeSearch(text, max_results=10).to_dict()
     return res
-    
+  
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
@@ -28,5 +30,5 @@ async def inline_handler(query: types.InlineQuery):
     )for link in links]
 
     await query.answer(articles, cache_time=60, is_personal=True) # отправляем ссылки по нажатию
-    
+
 executor.start_polling(dp, skip_updates=True)
