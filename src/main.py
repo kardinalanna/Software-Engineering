@@ -15,10 +15,11 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 @dp.inline_handler() #работает в inline режиме
-async def inline_handler(query: types.InlineQuery):
+async def inline_handler(query: types.InlineQuery, search=""):
     text = query.query or 'echo' #сюда попадает запрос
+#    if search != "":
+#       links = searcher(search)
     links = searcher(text) #запрос отправляем на парсинг
-
     articles = [types.InlineQueryResultArticle( #окно с результатами парсинга
         id=hashlib.md5(f'{link["id"]}'.encode()).hexdigest(),
         title=f'{link["title"]}',
@@ -28,7 +29,6 @@ async def inline_handler(query: types.InlineQuery):
             message_text=f'https://www.youtube.com/watch?v={link["id"]}'
         )
     )for link in links]
-
     await query.answer(articles, cache_time=60, is_personal=True) # отправляем ссылки по нажатию
-
+    return articles
 executor.start_polling(dp, skip_updates=True)
