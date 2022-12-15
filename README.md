@@ -1,6 +1,6 @@
 ### Software-Engineering
 # Telegram-bot для парсинга поисковой выдачи YouTube
-[![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml) master
+[![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml) master
 
 [![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=develop)](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml) develop
 
