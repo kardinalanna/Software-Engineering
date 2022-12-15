@@ -1,7 +1,9 @@
 ### Software-Engineering
 # Telegram-bot для парсинга поисковой выдачи YouTube
-![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=master)
-![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=develop)
+![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=master) master
+
+![master](https://github.com/kardinalanna/Software-Engineering/actions/workflows/test.yml/badge.svg?branch=develop) develop
+
 С помощью этого бота можно производить поиск в youtube,используя строку ввода сообщения, и сразу делиться ссылкой на видио.
 
 ### Запуск 
