@@ -17,7 +17,7 @@ def searcher(text):
 async def inline_handler(query: types.InlineQuery, search=""):
     text = query.query or 'echo' #сюда попадает запрос
     links = searcher(text) #запрос отправляем на парсинг
-        articles = [types.InlineQueryResultArticle( #окно с результатами парсинга
+    articles = [types.InlineQueryResultArticle( #окно с результатами парсинга
         id=hashlib.md5(f'{link["id"]}'.encode()).hexdigest(),
         title=f'{link["title"]}',
         url=f'https://www.youtube.com/watch?v={link["id"]}',
@@ -26,6 +26,6 @@ async def inline_handler(query: types.InlineQuery, search=""):
             message_text=f'https://www.youtube.com/watch?v={link["id"]}'
         )
     )for link in links]
-     await query.answer(articles, cache_time=60, is_personal=True) # отправляем ссылки по нажатию
+    await query.answer(articles, cache_time=60, is_personal=True) # отправляем ссылки по нажатию
     
 executor.start_polling(dp, skip_updates=True)
